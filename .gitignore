@@ -1,0 +1,12 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+.DS_Store
+ee.tex
+*.bib.bak
+*.bib.sav
+*.aux
+*.fdb_latexmk
+*.fls
+*.log

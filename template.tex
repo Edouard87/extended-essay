@@ -1,0 +1,55 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{fontspec}
+\usepackage{hyperref}
+\usepackage{setspace}
+\usepackage{multicol}
+\usepackage[margin={1in}]{geometry}
+\usepackage{longtable}
+\usepackage{colortbl}
+\usepackage{multirow}
+\usepackage{float}
+\usepackage{threeparttable}
+\usepackage{threeparttablex}
+\usepackage{makecell}
+\usepackage{tikz}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{wrapfig}
+\usepackage{tabu}
+\usepackage{chemfig}
+\usepackage{siunitx}
+
+\onehalfspacing
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+\setmainfont{Times New Roman}
+
+\setlength{\parindent}{0cm}
+\setlength{\parskip}{0.3cm}
+
+\begin{document}
+    \begin{titlepage}
+        \centering
+        \Huge{\bf $title$\par}
+        \vfill
+        \begin{minipage}{\textwidth}
+            \huge \textbf{Question:}~\emph{$rq$} \par
+            \vspace{3cm}
+        \end{minipage}
+        \LARGE{$subject$}
+        \vfill
+        \normalsize{$wc$ words}
+    \end{titlepage}
+    \tableofcontents
+    \newpage
+    \begin{multicols}{2}
+        $body$
+    \end{multicols}
+    \newpage
+    \bibliographystyle{IEEEtran}
+    \bibliography{$bibliography$}
+\end{document}
