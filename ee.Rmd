@@ -33,6 +33,8 @@ Some historians consider that plastics began with the synthesis of Bakelite in 1
 
 Collagen is a major structural protein of most connective tissues in mammals, such as skin, bones, and tendons. \cite{Ramachandran1963} Collagen-based plastic is already used in the production of drug-delivery devices (i.e. pill capsules), though its application in the context of other fields such as packaging has been criticized due to its structural weakness. Thus, this essay aims to determine whether an  an increase in the gelatin content of a sample of  bioplastic can offer a considerable increase in the mechanical strength of the sample. If this relationship is indeed true, gelatin bioplastics may have the potential to replace traditional plastics.
 
+Research has already been conducted in the strength of gelatin bioplastic, such as \cite{Pal2007}. That said, this research used different gelatin samples with known triple-helix concentrations. The idea was to characterize the properties of these different samples. It was concluded that samples with a greater triple-helix content were stronger. That said, can the properties of greater triple-helix collagen be recreated by simply increasing the collagen concentration? 
+
 # Investigation
 
 ## Safety Considerations
