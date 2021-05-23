@@ -1,7 +1,7 @@
 ---
 title: "The Connection Between Gelatin Content and Water Absorption of Gelatin Bioplastics"
 rq: "To what extent does the amount of gelatin in gelatin bioplastic samples affect their ability to absorb water?"
-wc: "`r wordcountaddin::word_count()`"
+wc: "658"
 bibliography: "refs.bib"
 subject: "Chemistry"
 output: 
@@ -11,17 +11,7 @@ output:
     keep_tex: true
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = F, out.width = "6cm", fig.align = "center", fig.pos = "H")
 
-decimalplaces <- function(x) {
-    if (abs(x - round(x)) > .Machine$double.eps^0.5) {
-        nchar(strsplit(sub('0+$', '', as.character(x)), ".", fixed = TRUE)[[1]][[2]])
-    } else {
-        return(0)
-    }
-}
-```
 
 # Introduction
 
@@ -45,32 +35,83 @@ The procedure involved 4 sets of six samples, in order to have the ability to ac
 
 # Results
 
-```{r}
-# Byrow is necessary to ensure that data is organized by row and not by column.
-data <- list(
-  matrix(
-    c(29.18,29.85,34.13,31.58,
-      39.94,37.79,38.41,38.94,
-      37.82,38.39,39.95,40.99,
-      41.40,42.44,44.23,43.86,
-      43.13,43.89,46.31,46.22,
-      50.54,48.76,47.94,47.38), ncol = 4, byrow = T),
-  matrix(
-    c(29.54,29.04,31.14,31.37,
-      22.46,41.63,42.73,45.34,
-      48.54,45.49,45.64,50.89,
-      52.57,54.22,55.53,55.45,
-      55.90,58.22,59.66,59.82,
-      60.15,59.61,60.88,61.94), ncol = 4, byrow = T)
-)
-print(data)
+
+```
+## [[1]]
+##       [,1]  [,2]  [,3]  [,4]
+## [1,] 29.18 29.85 34.13 31.58
+## [2,] 39.94 37.79 38.41 38.94
+## [3,] 37.82 38.39 39.95 40.99
+## [4,] 41.40 42.44 44.23 43.86
+## [5,] 43.13 43.89 46.31 46.22
+## [6,] 50.54 48.76 47.94 47.38
+## 
+## [[2]]
+##       [,1]  [,2]  [,3]  [,4]
+## [1,] 29.54 29.04 31.14 31.37
+## [2,] 22.46 41.63 42.73 45.34
+## [3,] 48.54 45.49 45.64 50.89
+## [4,] 52.57 54.22 55.53 55.45
+## [5,] 55.90 58.22 59.66 59.82
+## [6,] 60.15 59.61 60.88 61.94
 ```
 
-```{r}
-library(kableExtra)
-cbind(c(50,100,150,200,250,300),data[[1]]) %>%
-  kbl(booktabs = T, escape = F, caption = "Dry Weights", col.names = c("Concentration of Gelatin \\si{\\frac{gL}","Trial 1","Trial 2","Trial 3","Trial 4"))
-```
+<table>
+<caption>Dry Weights</caption>
+ <thead>
+  <tr>
+   <th style="text-align:right;"> Concentration of Gelatin \si{\frac{gL} </th>
+   <th style="text-align:right;"> Trial 1 </th>
+   <th style="text-align:right;"> Trial 2 </th>
+   <th style="text-align:right;"> Trial 3 </th>
+   <th style="text-align:right;"> Trial 4 </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:right;"> 50 </td>
+   <td style="text-align:right;"> 29.18 </td>
+   <td style="text-align:right;"> 29.85 </td>
+   <td style="text-align:right;"> 34.13 </td>
+   <td style="text-align:right;"> 31.58 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 100 </td>
+   <td style="text-align:right;"> 39.94 </td>
+   <td style="text-align:right;"> 37.79 </td>
+   <td style="text-align:right;"> 38.41 </td>
+   <td style="text-align:right;"> 38.94 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 150 </td>
+   <td style="text-align:right;"> 37.82 </td>
+   <td style="text-align:right;"> 38.39 </td>
+   <td style="text-align:right;"> 39.95 </td>
+   <td style="text-align:right;"> 40.99 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 200 </td>
+   <td style="text-align:right;"> 41.40 </td>
+   <td style="text-align:right;"> 42.44 </td>
+   <td style="text-align:right;"> 44.23 </td>
+   <td style="text-align:right;"> 43.86 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 250 </td>
+   <td style="text-align:right;"> 43.13 </td>
+   <td style="text-align:right;"> 43.89 </td>
+   <td style="text-align:right;"> 46.31 </td>
+   <td style="text-align:right;"> 46.22 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 300 </td>
+   <td style="text-align:right;"> 50.54 </td>
+   <td style="text-align:right;"> 48.76 </td>
+   <td style="text-align:right;"> 47.94 </td>
+   <td style="text-align:right;"> 47.38 </td>
+  </tr>
+</tbody>
+</table>
 
 The dry weights were were computed as soon as the subject were created and before they were inserted in their buckets, where they were placed to dry.
 
